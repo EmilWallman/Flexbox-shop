@@ -27,10 +27,23 @@ h2{
     display: flex;
     align-content: center;
     justify-content: space-around;
-    width: 30em;    
-    
+    width: 38em;    
     height: auto;
     position: relative;
+}
+
+.bike1{
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+.bike1:hover{
+    opacity: 1;
+}
+
+.bike1:hover .text-fs{
+    opacity: 1;
 }
 
 .bike-home:before{
@@ -39,8 +52,8 @@ h2{
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 1.5em;
-    right: 1.5em;
+    left: 0;
+    right: 0;
     background: none;
     transition: all .3s linear;
     border-radius: 3em;
@@ -50,4 +63,3 @@ h2{
     background: rgba(162, 162, 162, 0.3);
     border-radius: 3em;
 }
-
