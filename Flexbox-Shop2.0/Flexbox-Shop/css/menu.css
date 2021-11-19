@@ -1,3 +1,8 @@
+.container-body{
+    background-color: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .container-top{
     display: flex;
     flex-wrap: wrap;
@@ -5,7 +10,7 @@
     text-decoration: none;
     border-radius: 15px;    
 }
-/* HELLO HUOGOOO*/
+
 .container-top a{
     text-align: center;
     min-width: 20em;

@@ -2,47 +2,53 @@
 <html>
     <head>
         <!--Importing css documents one for the top bar and one for the products-->
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/products.css"/>
         <link rel="stylesheet" type="text/css" href="css/menu.css" />
         <title>Home</title>
     </head>
     <body>
-        <!--The top menu/bar-->
-        <div class="container-top">
-            <a href="index.html"><div class="item1 items-home">
-                <h1 >Home</h1>
-            </div></a>   
+        <div class="container-body">    
+            <!--The top menu/bar-->
+            <div class="container-top">
+                <a href="index.html"><div class="item1 items-home">
+                    <h1 >Home</h1>
+                </div></a>   
 
-            <a href="products.html"><div class="item2 items-home">
-                <h1>Products</h1>
-            </div></a>   
+                <a href="products.html"><div class="item2 items-home">
+                    <h1>Products</h1>
+                </div></a>   
+                
+                <a href="contacts.html"><div class="item3 items-home">
+                    <h1>Contacts</h1>
+                </div></a>
+                
+                <a href="about.html"><div class="item4 items-home">
+                    <h1>About us</h1>     
+                </div></a>
+                
+                <a href="Shop.html"><div class="item5 items-home">
+                    <img class="shopingcarticon" src="images/shopingcart.png" alt="shopingcart" />
+                </div></a>
+            </div>
             
-            <a href="contacts.html"><div class="item3 items-home">
-                <h1>Contacts</h1>
-            </div></a>
+            <!--The products for the product page-->
+            <div class="container-products">
+                <div class="products allebike-fs">
+                    <img class="allebike-fs" src="images/allebike-FS.png" alt="allebike-fs" width="100%"/>
+                </div>
+                <div class="products allebike-ht">
+                    <img class="allebike-ht" src="images/allebike-hardtail.png" alt="allebike-ht" width="100%"/>
+                </div>
+                <div class="products allebike-r">
+                    <img class="allebike-r" src="images/allebike-racer.png" alt="allebike-racer" width="100%"/>
+                </div>            
+            </div>
             
-            <a href="about.html"><div class="item4 items-home">
-                <h1>About us</h1>
-            </div></a>
-            
-            <a href="Shop.html"><div class="item5 items-home">
-                <img class="shopingcarticon" src="images/shopingcart.png" alt="shopingcart" />
-            </div></a>
+            <!--A footer at the bottom-->
+            <div class="footer">
+                <h3>Bike Shop</h3> <img class="footer-icon" src="images/Bike-Icon.png" alt="icon-cykel"/>   
+            </div>
         </div>
-        
-
-        <!--A div element with all of the products-->
-        <div class="container-products">
-
-        </div>
-        
-        
-        <p class="home-text">Lite text som ska stå under produkterna på startsidan!</p>
-        <!--A footer at the bottom-->
-        <div class="footer">
-            <h3>Bike Shop</h3> <img class="footer-icon" src="images/Bike-Icon.png" alt="icon-cykel"/>   
-        </div>
-
     </body>
 
 </html>
