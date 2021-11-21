@@ -8,7 +8,6 @@
 .products{
     display:flex;
     min-width: 10em;
-    max-width: 39em;
-    padding-bottom: 18%;
-    margin-bottom: 2%;
+    max-width: 33em;
+    
 }

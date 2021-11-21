@@ -1,4 +1,4 @@
-
+/*Till Emil: Lägg kommentarer i alla css document*/
 h3{
     font-size: 300%;
     
@@ -23,7 +23,7 @@ h2{
     display: flex;
     align-content: center;
     justify-content: space-around;
-    width: 38em;    
+    width: 33em;    
     height: auto;
     position: relative;
 }
