@@ -5,9 +5,12 @@
         <!--This is so that i can use different type of letters-->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <!--Importing css documents one for the top bar and one for the products-->
-        <link rel="stylesheet" type="text/css" href="css/products.css"
+        <link rel="stylesheet" type="text/css" href="css/products.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/test.css" />
+        <script src="slideshow.js"></script>
+
         <title>Home</title>
     </head>
     <body>
@@ -40,64 +43,65 @@
             <!--Till Emil: Fixa alla class på produkterna så att inga har samma osv.-->
             <!--Till Emil: Alla dessa produkter ska man kunna klicka på och få upp i en slidshow gjord på javasript-->
             <!--Dela upp allt med små mellanrum eller liknande med t.ex hardtail... fullsus... racer... track... ta även med märken som treck och cube-->
-            <div class="container-products slideshow-container">
-                <div class="product allebike-fs">
+            <div class="container-products">
+                <!--I use "oncklick" so that i can toggle the slideshow on and off by the images with javascript-->
+                <div onclick="myFunction()" class="product allebike-fs">
                     <img class="allebike-fs" src="images/products/allebike-FS.png" alt="allebike-fs" width="100%"/>    
                     <p>Allebike Majestic FS AXS
                         <br>
                         66 900kr
                     </p>
                 </div>
-                <div class="product allebike-ht">
+                <div onclick="myFunction()" class="product allebike-ht">
                     <img class="allebike-ht" src="images/products/allebike-hardtail.png" alt="allebike-ht" width="100%"/>
                     <p>Allebike Majestic HT AXS
                         <br>
                         52 500kr
                     </p>
                 </div>
-                <div class="product allebike-racer">
+                <div onclick="myFunction()" class="product allebike-racer">
                     <img class="allebike-r" src="images/products/allebike-racer.png" alt="allebike-racer" width="100%"/>
                     <p>Allebike Force AXS
                         <br>
                         38 900kr
                     </p>
                 </div>
-                <div class="product scott-fs">
+                <div onclick="myFunction()" class="product scott-fs">
                     <img class="scott-fs" src="images/products/scott fs.png" alt="scott-fs" width="100%"/>
                     <p>Scott Spark RC SL EVO AXS
                         <br>
                         149 995kr
                     </p>
                 </div>
-                <div class="product scott-track">
+                <div onclick="myFunction()" class="product scott-track">
                     <img class="scott-track" src="images/products/scott track.png" alt="scott-track" width="100%"/>
                     <p>Scott Plasma RC Ultimate
                         <br>
                         179 995kr
                     </p>
                 </div>
-                <div class="product specialized-down">
+                <div onclick="myFunction()" class="product specialized-down">
                     <img class="specialized-down" src="images/products/specialized down.PNG" alt="specialized-downhill" width="100%"/>
                     <p>Specialized S-Works Stumpjumper
                         <br>
                         95 995kr
                     </p>
                 </div>
-                <div class="product specialized-fs">
+                <div onclick="myFunction()" class="product specialized-fs">
                     <img class="specialized-fs" src="images/products/specialized fs.PNG" alt="specialized-fs" width="100%"/>
                     <p>Specialized S-Works Epic EVO
                         <br>
                         119 995kr
                     </p>
                 </div>
-                <div class="product specialized-racer">
+                <div onclick="myFunction()" class="product specialized-racer">
                     <img class="specialized-racer" src="images/products/specialized racer.PNG" alt="specialized-racer" width="100%"/>
                     <p>Specialized S-Works Tarmac SL7
                         <br>
                         139 995kr
                     </p>
                 </div>
-                <div class="product specialized-track">
+                <div onclick="myFunction()" class="product specialized-track">
                     <img class="specialized-track" src="images/products/specialized track.PNG" alt="specialized-track" width="100%"/>
                     <p>Specialized Shiv TT Disc
                         <br>
@@ -105,12 +109,69 @@
                     </p>
                 </div>
             </div>
+            <div class="slideshow-container" id="mySlides">
+
+                <div class="mySlides fade">
+                  <img src="images/products/allebike-FS.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/products/allebike-hardtail.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="images/products/allebike-racer.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/products/scott fs.PNG" style="width:100%">
+                </div>
+                    
+                <div class="mySlides fade">
+                    <img src="images/products/scott track.PNG" style="width:100%">
+                </div>
+                    
+                <div class="mySlides fade">
+                    <img src="images/products/specialized down.PNG" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/products/specialized fs.PNG" style="width:100%">
+                </div>
+                    
+                <div class="mySlides fade">
+                    <img src="images/products/specialized racer.PNG" style="width:100%">
+                </div>
+                    
+                <div class="mySlides fade">
+                    <img src="images/products/specialized track.PNG" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(7)"></span> 
+                    <span class="dot" onclick="currentSlide(8)"></span> 
+                    <span class="dot" onclick="currentSlide(9)"></span> 
+                </div>
+            
             
             <!--A footer at the bottom-->
             <div class="footer">
                 <h3>Bike Shop</h3> <img class="footer-icon" src="images/Bike-Icon.png" alt="icon-cykel"/>   
             </div>
         </div>
+        
     </body>
 
 </html>
