@@ -1,0 +1,15 @@
+/*For all of the products at the product page*/
+.container-products{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.product{
+    display:block;
+    min-width: 10em;
+    max-width: 33em;   
+    text-align: center;
+    font-weight: bold;
+}
+

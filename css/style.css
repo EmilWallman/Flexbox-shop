@@ -1,16 +1,14 @@
-/*Till Emil: Lägg kommentarer i alla css document*/
+/*for different texts */
 h3{
     font-size: 300%;
-    
-
 }
-
 h2{
     font-size: 540%;
     text-align: center;
     
 }
 
+/*This is for the three bikes at the home screen*/
 .container-products-home{
     display: flex;
     align-content: center;
@@ -18,7 +16,6 @@ h2{
     flex-wrap: wrap;
    
 }
-
 .bike-home{
     display: flex;
     align-content: center;
@@ -26,20 +23,6 @@ h2{
     width: 33em;    
     height: auto;
     position: relative;
-}
-
-.bike1{
-    transition: .5s ease;
-    backface-visibility: hidden;
-    opacity: 1;
-}
-
-.bike1:hover{
-    opacity: 1;
-}
-
-.bike1:hover .text-fs{
-    opacity: 1;
 }
 
 .bike-home:before{
@@ -54,9 +37,19 @@ h2{
     transition: all .3s linear;
     border-radius: 3em;
 }
-
 .bike-home:hover:before{
     background: rgba(162, 162, 162, 0.3);
     border-radius: 3em;
 }
 
+/*For the short text below the three products (home screen)*/
+.home-text-container{
+    display: flex;
+    justify-content: center;
+}
+.home-text{
+    width: 60%;
+    text-align: center;
+    font-size: 120%;
+    font-weight: 800;
+}
