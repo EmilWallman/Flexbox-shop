@@ -33,29 +33,20 @@
 }
 
 #myDIV div {
-    margin-top: -1300px;
+    top: 5em;
     position: fixed;
-    
-    
-
-    left: 25%;
+    left: 15em;
+    right: 15em;
+    bottom: auto;
     
     text-align: center;
-    width: 50em;
-    max-height: 10em;
+    width: auto;
+    height: auto;
+    
 }
 
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+.close{
+    color:red;
+    position: fixed;
+    
 }
-  
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-  
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
