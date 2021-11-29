@@ -7,12 +7,12 @@
         <!--Importing css documents one for the top bar and one for the products-->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <script src="slideshow.js"></script>
         <title>Home</title>
     </head>
-    <body>
+    <body onload="showSlides()">
         <div class="container-body">
             <!--The top menu/bar-->
-            <!--Till Emil: Gör "Drop down" menyer på alla saker i top baren-->
             <div class="container-top">
                 <a href="index.html"><div class="item1 items-home">
                     <h1 >Home</h1>
@@ -38,22 +38,57 @@
             
             
             <h2>House of Bikes</h2>
-            <!--The products for home screen (quick view)-->
-            <div class="container-products-home">
-                <a href="products.html"> <div class="bike1 bike-home">
-                    <img class="allebike-fs" src="images/products/allebike-FS.png" alt="allebike-fs" width="90%"/>
-                </div></a>
+            <a href="products.html">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/products/allebike-FS.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/products/scott fs.PNG" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/products/specialized fs.PNG" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/products/specialized down.PNG" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/products/allebike-hardtail.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/products/allebike-racer.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/products/specialized racer.PNG" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/products/scott track.PNG" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/products/specialized track.PNG" style="width:100%">
+                    </div>
+                    
+                </div>
+            </a>
+            <br>
                 
-                <a href="products.html"><div class="bike2 bike-home">
-                    <img class="allebike-racer" src="images/products/allebike-racer.png" alt="allebike-racer" width="90%"/>
-                </div></a>
-
-                <a href="products.html"><div class="bike3 bike-home">
-                    <img class="allebike-ht" src="images/products/allebike-hardtail.png" alt="allebike-ht" width="90%"/>
-                </div></a>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
             </div>
+
+
+
+        
             <div class=home-text-container>
-                <p class="home-text">House of Bikes är den största cykelbutiken online. Med över 1 miljon nöjda kunder varje vecka kan vi här på House of Bikes stolt säga att vi erbjuder kvalite samt bra priser. House of Bikes är en åter butik där man kan köpa cyklar för olika tillfällen till dom bästa priserna och från de största tillverkarna.</p>
+                <p class="home-text">House of Bikes is the biggest online bikestore. With over 1 milion happy buyers every week us at House of Bike can proudly say that we offer quality and good prices. House of bikes is a reseller where you can buy bikes for different situatuions and also for the best prices and from the biggest manufacturer</p>
             </div>
             
             <!--A footer at the bottom-->
@@ -62,5 +97,7 @@
             </div>
         </div>
     </body>
+    
+    
 
 </html>

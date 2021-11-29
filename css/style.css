@@ -1,4 +1,13 @@
-/*for different texts */
+/*this is for all the different css that is not 
+menu products or advanced css*/
+
+
+/*for different texts for menu, contacts and about us*/
+h5{
+  font-size: 120%;
+  width: 50%;
+}
+
 h3{
     font-size: 300%;
 }
@@ -8,38 +17,67 @@ h2{
     
 }
 
-/*This is for the three bikes at the home screen*/
-.container-products-home{
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   
-}
-.bike-home{
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    width: 33em;    
-    height: auto;
-    position: relative;
+/*This is for the slideshow with bikes at the home page*/
+
+
+/* Slideshow container */
+.slideshow-container {
+
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.bike-home:before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: none;
-    transition: all .3s linear;
-    border-radius: 3em;
+/*The hover effect*/
+.mySlides:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: none;
+  transition: all .3s linear;
+  border-radius: 3em;
 }
-.bike-home:hover:before{
-    background: rgba(162, 162, 162, 0.3);
-    border-radius: 3em;
+
+.mySlides:hover:before{
+  background: rgba(162, 162, 162, 0.3);
+  border-radius: 3em;
+}
+
+/* The dots at the bottom of the slideshow*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation betweene images*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 /*For the short text below the three products (home screen)*/
@@ -48,8 +86,24 @@ h2{
     justify-content: center;
 }
 .home-text{
-    width: 60%;
-    text-align: center;
-    font-size: 120%;
-    font-weight: 800;
+  width: 60%;
+  text-align: center;
+  font-size: 120%;
+  font-weight: 800;
 }
+
+
+/*For the About us part with one image and some centerd text*/
+
+.about-text{
+  display: flex;
+  justify-content:center;
+  text-align: center;
+}
+
+.bike-picture{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+

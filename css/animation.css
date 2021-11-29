@@ -1,0 +1,19 @@
+/*the advanced animation with css its a tire that moves left and right whole also turning*/
+
+.Bike-tire {
+    animation-name: moving;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    Animation-iteration-count: 5000;
+    animation-delay:2s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+  
+@keyframes moving {
+    0% {transform: translateX(0) rotate(0turn);}
+    20% {transform: translateX(1500px) rotate(5turn);}
+    40% {transform: translateX(0) rotate(-.2turn);}
+    70% {transform: translateX(800px) rotate(2.5turn);} 
+    100% {transform: translateX(0) rotate(-1.0turn);} 
+}
